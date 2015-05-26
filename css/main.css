@@ -1,3 +1,5 @@
+
+/*2015-05-25*/
 body{
 	background-image: url('../img/background.jpg');
 	background-attachment: fixed;
@@ -10,7 +12,8 @@ body {
 	font-size: 30px;
 	font-family: 'Open Sans', 'helvetica', arial, sans-serif;
 	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-	color: 'EEE';
+	color: #62686f;
+	
 }
 
 .container{
@@ -44,13 +47,135 @@ body {
 }
 
 
-
+h1 h2 h3 h4 h5 h6{
+	color: #333;
+	font-weight: 300;
+}
 
 
 .main-header h1{
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding: 1px;
+	color: #EEE;
 }
 
-      
+
+/*2015-05-26*/
+
+.main-nav {
+  background-color: #333;
+  text-align: center;
+  /*自己增加了令整个容器居中*/
+
+  margin-top: -35px;
+}
+
+.main-nav ul li {
+  margin: 15px 10px;
+}
+
+.main-nav ul li a {
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  /*所有字母转换成大写*/
+  text-decoration: none;
+  /*消除装饰*/
+}
+
+.main-nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.main-nav li{
+	list-style: none;
+	/*消除了列表的默认样式*/
+	display: inline-block;
+	/*将 li 标签变成了行元素。
+	inline-block 元素可以简单理解为对外表现为行元素，而对内表现为块元素。*/
+}
+
+/*What I Do 部分*/
+.info-section {
+  background-color: #fff;
+  margin-top: -36px;
+  padding: 30px 60px;
+}
+
+.whatido__skill{
+	list-style: none;
+}
+
+.whatido__skill-list{
+	overflow: hidden;
+}
+
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+.whatido__skill--code {
+  background-image: url(../img/skill-code.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 60px;
+  text-align: center;
+
+  float: left;
+  width: 33.3%;
+}
+
+.whatido__skill--design {
+  background-image: url(../img/skill-design.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 60px;
+  text-align: center;
+
+  float: left;
+  width: 33.3%;
+}
+
+.whatido__skill--product {
+  background-image: url(../img/skill-product.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 60px;
+  text-align: center;
+  
+  float: left;
+  width: 33.3%;
+}
+
+.info-section header h2 {
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
+ /* text-decoration: underline;*/
+  /*给标题加下划线*/
+}
+
+header h2:after{
+	content: "";
+	display: table;
+	margin: 0 auto; 
+	/*居中*/
+	width: 100px;
+	border-bottom: 3px solid black
+}
+
+.info-section__description {
+  font-style: italic;
+  margin-bottom: 60px;
+}
+
+.info-section header{
+  margin-bottom: 60px;
+  text-align: center;
+}
