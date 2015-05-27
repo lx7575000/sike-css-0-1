@@ -46,12 +46,10 @@ body {
 
 }
 
-
 h1 h2 h3 h4 h5 h6{
 	color: #333;
 	font-weight: 300;
 }
-
 
 .main-header h1{
 	margin-top: 0px;
@@ -59,7 +57,6 @@ h1 h2 h3 h4 h5 h6{
 	padding: 1px;
 	color: #EEE;
 }
-
 
 /*2015-05-26*/
 
@@ -118,7 +115,6 @@ h1 h2 h3 h4 h5 h6{
 	clear: both;
 }
 
-
 .whatido__skill--code {
   background-image: url(../img/skill-code.png);
   background-repeat: no-repeat;
@@ -152,7 +148,7 @@ h1 h2 h3 h4 h5 h6{
   width: 33.3%;
 }
 
-.info-section header h2 {
+.whatido header h2 {
   font-size: 28px;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -161,12 +157,12 @@ h1 h2 h3 h4 h5 h6{
   /*给标题加下划线*/
 }
 
-header h2:after{
+.info-section header h2:after{
 	content: "";
 	display: table;
 	margin: 0 auto; 
 	/*居中*/
-	width: 100px;
+	width: 120px;
 	border-bottom: 3px solid black
 }
 
@@ -178,4 +174,51 @@ header h2:after{
 .info-section header{
   margin-bottom: 60px;
   text-align: center;
+}
+
+/*2015-05-27*/
+
+.education-experience__list img{
+  width: 180px;
+  float: left;
+  margin-right: 40px;
+}
+
+.education-experience__list h3{
+  overflow: hidden;
+}
+
+.education-experience__list p{
+  overflow: hidden;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.get-in-touch__list li{
+  list-style: none;
+}
+
+.photos__list li{
+  list-style: none;
+}
+
+.photos__list img:before,img:after{
+  box-sizing: inherit;
+}
+
+.photos__list img{
+  width: 100%;
+  padding: 10px;
+}
+
+.photos li{
+  float: left;
+  width:25%;
+  box-sizing: border-box;
 }
